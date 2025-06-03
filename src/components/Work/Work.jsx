@@ -1,5 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
-import { Code, Smartphone, ShoppingCart, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { FaArrowRight } from "react-icons/fa"; 
+import {
+  Code,
+  Smartphone,
+  ShoppingCart,
+  ChevronLeft,
+  ChevronRight,
+  X,
+} from "lucide-react";
 
 const projects = [
   {
@@ -18,7 +26,7 @@ const projects = [
     ],
     icon: <Code className="w-16 h-16 text-purple-500" />,
     gradient: "bg-gradient-to-br from-blue-400 via-cyan-400 to-teal-300",
-    github: "https://github.com/yourusername/job-portal",
+    github: "https://github.com/varsreddy/job-portal",
     webapp: "https://jobportal.vercel.app",
   },
   {
@@ -54,7 +62,7 @@ const projects = [
     ],
     icon: <ShoppingCart className="w-16 h-16 text-red-500" />,
     gradient: "bg-gradient-to-br from-orange-400 via-rose-400 to-red-400",
-    github: "https://github.com/yourusername/amazon-clone",
+    github: "https://github.com/varsreddy/amazon-clone",
     webapp: "https://amazonclone.vercel.app",
   },
   {
@@ -126,7 +134,6 @@ const projects = [
   },
 ];
 
-
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const scrollRef = useRef(null);
@@ -185,11 +192,13 @@ const Work = () => {
       className="py-24 px-[6vw] md:px-[6vw] lg:px-[10vw] font-sans relative bg-gray-50 dark:bg-[#0d0d0d]"
     >
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">PROJECTS</h2>
+        <h2 className="text-4xl font-bold text-gray-900 dark:text-white">
+          PROJECTS
+        </h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-600 dark:text-gray-400 mt-4 text-lg font-semibold">
-          A showcase of the projects I have worked on, highlighting my skills and experience in various
-          technologies
+          A showcase of the projects I have worked on, highlighting my skills
+          and experience in various technologies
         </p>
       </div>
 
@@ -230,8 +239,12 @@ const Work = () => {
                 {project.icon}
               </div>
               <div className="px-6 pb-6 text-center bg-white dark:bg-[#1a1a1a]">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-4 pt-2 line-clamp-3">{project.description}</p>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-4 pt-2 line-clamp-3">
+                  {project.description}
+                </p>
                 <div className="mb-4 flex flex-wrap justify-center gap-2">
                   {project.tags.map((tag, i) => (
                     <span
@@ -266,6 +279,20 @@ const Work = () => {
         </button>
       </div>
 
+      <div className="mt-8 flex justify-center">
+        <button
+          onClick={() =>
+            window.open("https://github.com/varsreddy", "_blank")
+          }
+          className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 
+               text-white font-semibold py-3 px-8 rounded-full shadow-lg 
+               flex items-center gap-3 hover:brightness-110 transition"
+        >
+          Explore All Projects
+          <FaArrowRight className="animate-moveRight" />
+        </button>
+      </div>
+
       {/* Modal */}
       {selectedProject && (
         <div
@@ -283,9 +310,15 @@ const Work = () => {
             >
               <X size={28} />
             </button>
-            <div className="flex justify-center mb-4">{selectedProject.icon}</div>
-            <h3 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white">{selectedProject.title}</h3>
-            <p className="text-gray-700 dark:text-gray-300 mb-4">{selectedProject.description}</p>
+            <div className="flex justify-center mb-4">
+              {selectedProject.icon}
+            </div>
+            <h3 className="text-3xl font-bold mb-2 text-gray-900 dark:text-white">
+              {selectedProject.title}
+            </h3>
+            <p className="text-gray-700 dark:text-gray-300 mb-4">
+              {selectedProject.description}
+            </p>
             <div className="mb-6 flex flex-wrap gap-2">
               {selectedProject.tags.map((tag, i) => (
                 <span
