@@ -355,7 +355,7 @@ const Work = () => {
         </div>
       )}
 
-      <style jsx>{`
+      <style>{`
         /* Hide scrollbar for WebKit */
         .scrollbar-none::-webkit-scrollbar {
           display: none;
