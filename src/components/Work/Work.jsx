@@ -26,8 +26,8 @@ const projects = [
     ],
     icon: <Code className="w-16 h-16 text-purple-500" />,
     gradient: "bg-gradient-to-br from-blue-400 via-cyan-400 to-teal-300",
-    github: "https://github.com/varsreddy/job-portal",
-    webapp: "https://jobportal.vercel.app",
+    github: "https://github.com/varsreddy/JobPortal-frontend",
+    webapp: "https://job-portal-frontend-six-lime.vercel.app/",
   },
   {
     title: "Car Finder App",
