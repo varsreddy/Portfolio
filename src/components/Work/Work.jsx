@@ -62,7 +62,7 @@ const projects = [
     ],
     icon: <ShoppingCart className="w-16 h-16 text-red-500" />,
     gradient: "bg-gradient-to-br from-orange-400 via-rose-400 to-red-400",
-    github: "https://github.com/varsreddy/amazon-clone",
+    github: "https://github.com/varsreddy/AmazonClone",
     webapp: "",
   },
   {
