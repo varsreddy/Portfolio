@@ -63,16 +63,21 @@ const projects = [
     icon: <ShoppingCart className="w-16 h-16 text-red-500" />,
     gradient: "bg-gradient-to-br from-orange-400 via-rose-400 to-red-400",
     github: "https://github.com/varsreddy/amazon-clone",
-    webapp: "https://amazonclone.vercel.app",
+    webapp: "",
   },
   {
     title: "GeminiClone MERN",
     description:
-      "A sleek and minimal Gemini AI web app clone built using ReactJS and CSS. This project mimics a conversational AI assistant interface with functional state management and modern UI layout.",
-    tags: [
-      "ReactJS",
+"A streamlined, responsive Gemini AI web app clone built with ReactJS and Vite. This frontend-only project features an intuitive UI, state management, and interactive elements like prompt suggestions, voice input, and simulated image uploads."
+,tags: [
+
+
+  "ReactJS",
       "Vite",
       "CSS3",
+
+
+
       "useState",
       "useContext",
       "OpenAI",
@@ -82,7 +87,7 @@ const projects = [
     icon: <Code className="w-16 h-16 text-blue-500" />,
     gradient: "bg-gradient-to-br from-cyan-500 via-blue-500 to-indigo-500",
     github: "https://github.com/varsreddy/GeminiCloneMERN",
-    webapp: "",
+    webapp: "https://gemini-clone-ka38.onrender.com",
   },
   {
     title: "GitHub Profile Analyzer",
@@ -101,7 +106,7 @@ const projects = [
     icon: <Code className="w-16 h-16 text-green-500" />,
     gradient: "bg-gradient-to-br from-green-400 via-emerald-400 to-lime-300",
     github: "https://github.com/varsreddy/GithubProfileAnalyzer",
-    webapp: "",
+    webapp: "https://github-user-analyzer-o8b4.onrender.com",
   },
   {
     title: "AdvancedAuth MERN",
@@ -130,7 +135,7 @@ const projects = [
     icon: <Smartphone className="w-16 h-16 text-sky-500" />,
     gradient: "bg-gradient-to-br from-sky-400 via-indigo-400 to-violet-500",
     github: "https://github.com/varsreddy/weather-app-javascript",
-    webapp: "",
+    webapp: "https://weather-app-sou8.onrender.com",
   },
 ];
 
