@@ -11,14 +11,14 @@ const skillsData = [
     icon: Code2,
     gradient: "from-[#a78bfa] to-[#7c3aed]",
     hoverColor: "hover:bg-[#a78bfa]/20",
-    skills: ["Java", "Python", "C","JavaScript"],
+    skills: ["Java", "Python", "C"],
   },
   {
     title: "Web Tech",
     icon: Globe,
     gradient: "from-[#f472b6] to-[#ec4899]",
     hoverColor: "hover:bg-[#f472b6]/20",
-    skills: ["React.js", "HTML", "CSS", "JavaScript", "Bootstrap", "Tailwind", "Node.js", "Express.js", "REST APIs","Material UI"],
+    skills: ["ReactJs","NextJs", "HTML", "CSS", "JavaScript", "Bootstrap", "TailwindCSS", "Node.js", "Express.js", "REST APIs","Material UI"],
   },
   {
     title: "Databases",
@@ -32,14 +32,14 @@ const skillsData = [
     icon: BarChart2,
     gradient: "from-[#facc15] to-[#eab308]",
     hoverColor: "hover:bg-[#facc15]/20",
-    skills: ["Matplotlib", "NumPy", "Scikit-learn", "Seaborn"],
+    skills: ["Matplotlib", "NumPy","Pandas", "Scikit-learn", "Seaborn"],
   },
   {
     title: "Tools",
     icon: Wrench,
     gradient: "from-[#f87171] to-[#ef4444]",
     hoverColor: "hover:bg-[#f87171]/20",
-    skills: ["Excel", "API Integration", "Figma","Git" ,"VS Code", "Optimization",  "GitHub", "Render", "Vercel", "Postman"],
+skills: ["VS Code", "Git", "GitHub", "API Integration", "Postman", "Figma", "Excel", "Optimization", "Render", "Vercel"]
   },
   {
     title: "Soft Skills",

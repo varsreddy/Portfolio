@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="min-h-screen flex items-center justify-center pt-20 px-6 sm:px-10 lg:px-20 bg-white dark:bg-gray-950 relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center pt-10 px-6 sm:px-10 lg:px-20 bg-white dark:bg-gray-950 relative overflow-hidden"
     >
       {/* Background Glow Effects */}
       <div className="absolute top-0 left-0 w-[32rem] h-[32rem] bg-gradient-to-br from-orange-100/50 to-pink-100/50 dark:from-orange-900/20 dark:to-pink-900/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
@@ -30,9 +30,10 @@ const About = () => {
               <span className="text-[#8245ec]">I am a </span>
               <ReactTypingEffect
                 text={[
-                  "Fullstack Developer",
-                  "App Developer",
+                  "Full Stack Developer",
+                  "MERN Stack Developer",
                   "UI/UX Designer",
+                  "App Developer",
                   "Coder",
                 ]}
                 speed={100}
@@ -60,7 +61,7 @@ const About = () => {
                 rel="noopener noreferrer"
                 className="text-white py-3 px-8 rounded-full font-bold text-lg shadow-md transition-transform transform hover:scale-105 bg-gradient-to-r from-[#8245ec] to-[#a855f7]"
               >
-                Download CV
+                View My Resume
               </a>
 
               <a
@@ -75,7 +76,7 @@ const About = () => {
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-100 h-100 rounded-full bg-gradient-to-r from-orange-400 to-pink-400 p-1 animate-pulse">
+              <div className="w-50 h-50 rounded-full bg-gradient-to-r from-orange-400 to-pink-400 p-1 animate-pulse">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
                     src="https://i.postimg.cc/T1kjxH81/pic-mine.jpg"

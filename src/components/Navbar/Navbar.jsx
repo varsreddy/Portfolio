@@ -156,7 +156,7 @@ const Navbar = () => {
       </nav>
 
       {/* Spacer to prevent content from being hidden behind fixed navbar */}
-      <div className="h-14 md:h-16"></div>
+      {/* <div className="h-14 md:h-16"></div> */}
     </>
   );
 };
