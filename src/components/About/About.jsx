@@ -56,7 +56,7 @@ const About = () => {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in">
               <a
-                href="https://drive.google.com/file/d/1gRhNxnKNre88arfoqHCbzO8DbpLjSvtW/view?usp=sharing"
+                href="https://drive.google.com/file/d/1_dXz3nP7-KGQtYp3KRgIKnnRnl4JwutJ/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white py-3 px-8 rounded-full font-bold text-lg shadow-md transition-transform transform hover:scale-105 bg-gradient-to-r from-[#8245ec] to-[#a855f7]"

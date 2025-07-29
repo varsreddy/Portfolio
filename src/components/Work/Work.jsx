@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { FaArrowRight } from "react-icons/fa"; 
+import { FaArrowRight } from "react-icons/fa";
 import {
   Code,
   Smartphone,
@@ -7,6 +7,10 @@ import {
   ChevronLeft,
   ChevronRight,
   X,
+  Bot,
+  ShieldCheck,
+  Briefcase,
+  Sparkles,
 } from "lucide-react";
 
 const projects = [
@@ -24,11 +28,30 @@ const projects = [
       "GitHub",
       "Vercel",
     ],
-    icon: <Code className="w-16 h-16 text-purple-500" />,
+    icon: <Briefcase className="w-16 h-16 text-purple-500" />,
     gradient: "bg-gradient-to-br from-blue-400 via-cyan-400 to-teal-300",
     github: "https://github.com/varsreddy/JobPortal-frontend",
     webapp: "https://job-portal-frontend-six-lime.vercel.app/",
   },
+  {
+    title: "MockMate - AI Mock Interviewer",
+    description:
+      "An AI-powered mock interview platform built with Clerk authentication, dynamic question categories, and real-time performance feedback. Future enhancements include face detection using MediaPipe to ensure visibility and user presence during interviews.",
+    tags: [
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "Clerk Auth",
+      "Vercel",
+      "Git",
+      "GitHub",
+    ],
+    icon: <Bot className="w-16 h-16 text-indigo-500" />,
+    gradient: "bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-400",
+    github: "https://github.com/varsreddy/ai-mock-interviewer",
+    webapp: "https://mockmate.vercel.app",
+  },
+
   {
     title: "Car Finder App",
     description:
@@ -68,15 +91,11 @@ const projects = [
   {
     title: "GeminiClone MERN",
     description:
-"A streamlined, responsive Gemini AI web app clone built with ReactJS and Vite. This frontend-only project features an intuitive UI, state management, and interactive elements like prompt suggestions, voice input, and simulated image uploads."
-,tags: [
-
-
-  "ReactJS",
+      "A streamlined, responsive Gemini AI web app clone built with ReactJS and Vite. This frontend-only project features an intuitive UI, state management, and interactive elements like prompt suggestions, voice input, and simulated image uploads.",
+    tags: [
+      "ReactJS",
       "Vite",
       "CSS3",
-
-
 
       "useState",
       "useContext",
@@ -84,7 +103,7 @@ const projects = [
       "Git",
       "GitHub",
     ],
-    icon: <Code className="w-16 h-16 text-blue-500" />,
+    icon: <Sparkles className="w-16 h-16 text-blue-500" />,
     gradient: "bg-gradient-to-br from-cyan-500 via-blue-500 to-indigo-500",
     github: "https://github.com/varsreddy/GeminiCloneMERN",
     webapp: "https://gemini-clone-ka38.onrender.com",
@@ -122,7 +141,7 @@ const projects = [
       "Git",
       "GitHub",
     ],
-    icon: <Code className="w-16 h-16 text-yellow-500" />,
+    icon: <ShieldCheck className="w-16 h-16 text-yellow-500" />,
     gradient: "bg-gradient-to-br from-yellow-300 via-orange-400 to-amber-500",
     github: "https://github.com/varsreddy/AdvancedAuthMERN",
     webapp: "",
@@ -286,9 +305,7 @@ const Work = () => {
 
       <div className="mt-8 flex justify-center">
         <button
-          onClick={() =>
-            window.open("https://github.com/varsreddy", "_blank")
-          }
+          onClick={() => window.open("https://github.com/varsreddy", "_blank")}
           className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 
                text-white font-semibold py-3 px-8 rounded-full shadow-lg 
                flex items-center gap-3 hover:brightness-110 transition"
